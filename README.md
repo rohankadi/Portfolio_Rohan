@@ -1,4 +1,4 @@
-# Rohan's Portfolio
+# Portfolio
 
 Welcome to my personal portfolio! This portfolio showcases my skills, projects, training, certifications, and more. Feel free to explore and get to know me better.
 
