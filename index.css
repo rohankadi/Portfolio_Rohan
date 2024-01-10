@@ -1032,3 +1032,53 @@ img {
     font-size: 2.5rem;
   }
 }
+
+/* Training Section Styles */
+.training {
+  padding: 80px;
+  background-color: #f9f9f9;
+}
+
+.training_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 0 4%;
+}
+
+.training_card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.training_card:hover{
+  scale: 1.01;
+}
+
+.training_title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+.training_duration {
+  color: #777;
+}
+
+.training_content {
+  margin-top: 20px;
+}
+
+.training_description {
+  color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+  .training_container {
+      grid-template-columns: 1fr;
+  }
+}
+
