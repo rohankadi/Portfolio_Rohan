@@ -480,6 +480,9 @@
         <section class="contact section" id="contact">
             <h2 class="section_title">Contact Me</h2>
             <span class="section_subtitle">Get in touch</span>
+            
+            <!-- for displaying msg -->
+            <span id="sendmsg"></span>
 
             <div class="contact_container container grid">
                 <div>
@@ -511,25 +514,25 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <form name="submit-to-google-sheet" class="contact_form grid">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
-                            <input type="text" id="name" class="contact_input" name="Name">
+                            <input type="text" id="name" class="contact_input" name="Name" required>
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Email</label>
-                            <input type="email" id="email" class="contact_input" name="Email">
+                            <input type="email" id="email" class="contact_input" name="Email" required>
                         </div>
                     </div>
                     <div class="contact_content">
                         <label for="" class="contact_label">Projects</label>
-                        <input type="text" id="projects" class="contact_input" name="Projects">
+                        <input type="text" id="projects" class="contact_input" name="Projects" required>
                     </div>
                     <div class="contact_content">
                         <label for="" class="contact_label">Message</label>
-                        <textarea name="Message" id="textarea" cols="0" rows="7" class="contact_input"></textarea>
+                        <textarea name="Message" id="textarea" cols="0" rows="7" class="contact_input" required></textarea>
                     </div>
 
                     <!-- <div>
@@ -537,8 +540,7 @@
                     </div> -->
 
                     <div>
-                        <button type="submit" class="clicked button button-flex button_icon" style="border: none;"> Send
-                            Message <i class="fa-solid fa-angles-right home_icon"></i></button>
+                        <button type="submit" class="clicked button button-flex button_icon" style="border: none;"> Send Message <i class="fa-solid fa-angles-right home_icon"></i></button>
                     </div>
                 </form>
             </div>
@@ -580,6 +582,7 @@
         </div>
     </footer>
 
+    <!-- contact submit form-->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxuozGxkuAq-ZQxX4nTePdD5BWj48XZc8KdjKBEU88BcGyZLN493udhpnhdf2wEsRdVWg/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -587,7 +590,8 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
+                .then(response => 
+                document.getElementById("sendmsg").innerHTML = 'Message sent successfully ')
                 .catch(error => console.error('Error!', error.message))
         })
     </script>

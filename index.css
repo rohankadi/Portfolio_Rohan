@@ -278,6 +278,7 @@ img {
 .home_social a {
   color: rgb(6 182 212);
 }
+
 .home_social a:hover {
   scale: 1.15;
 }
@@ -410,7 +411,7 @@ img {
   width: 125px;
 }
 
-.skill img:hover{
+.skill img:hover {
   scale: 1.05;
 }
 
@@ -777,7 +778,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .owl-nav{
+  .owl-nav {
     position: absolute;
     display: flex;
     top: 9rem;
@@ -1065,7 +1066,7 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.training_card:hover{
+.training_card:hover {
   scale: 1.01;
 }
 
@@ -1090,9 +1091,15 @@ img {
 
 @media screen and (max-width: 768px) {
   .training_container {
-      grid-template-columns: 1fr;
-      margin: 0 -35px;
+    grid-template-columns: 1fr;
+    margin: 0 -35px;
   }
 }
 
-
+#sendmsg {
+  color: green;
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
