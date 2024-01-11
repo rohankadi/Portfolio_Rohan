@@ -255,7 +255,8 @@ img {
 
 .home_subtitle {
   font-size: var(--h3-font-size);
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: rgb(6 182 212);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
 }
@@ -277,6 +278,10 @@ img {
 .home_social a {
   color: rgb(6 182 212);
 }
+.home_social a:hover {
+  scale: 1.15;
+}
+
 
 .home_icon {
   margin-left: 0.5rem;
@@ -516,7 +521,7 @@ img {
 
 .grid_items:hover {
   scale: 1.02;
-  border: 1.8px solid orange;
+  border: 0.1rem solid orange;
 }
 
 .grid_item_section {
@@ -775,7 +780,7 @@ img {
   .owl-nav{
     position: absolute;
     display: flex;
-    top: 3rem;
+    top: 9rem;
   }
 }
 
