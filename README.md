@@ -31,6 +31,7 @@ Discover the services I offer as a Frontend and Backend developer, with details 
 
 ## Contact Me
 Feel free to get in touch! Find my contact information and a form to send me a message.
+- [+91 9591372522](#9591372522) , rkrohan174@gmail.com
 
 ## Feedback
 If you have any feedback or suggestions, feel free to open an issue or reach out to me through the provided contact information.
